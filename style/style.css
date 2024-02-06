@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #020103;
+    color: #e8e7e9;
+}
+
+header.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 9999;
+
+}
+
+header.navbar-container .logo p {
+    width: auto;
+    font: 700 1.5rem 'Montserrat', sans-serif;
+    color: #e90ff0;
+
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out ;
+    -o-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+}
+@keyframes hoverme { /*make hover animation*/
+    25% {
+        color: #5800ff;
+    }
+    50% {
+        color: #e8b403;
+    }
+    75% {
+        color: #e8e7e9;
+    }
+    100% {
+        color: #e90ff0;
+    }
+}
+
+header.navbar-container .logo p:hover {
+    animation: hoverme 2s infinite; /*make hover animation goes infinite*/
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e8e7e9;
+
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #e8e7e9;
+    color: #020103;
+}
+
+main {
+    flex: 1;
+
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+main .content {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+main .content .content-description {
+    flex: 1 1;
+}
+
+main .content .content-description .title {
+    margin-block: 1rem;
+
+    font-size: 3.5rem;
+}
+
+main .content .content-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+main .content .content-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color:#e8e7e9;
+
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #5800ff;
+
+    cursor: pointer;
+    transition: all 0.5 ease-in;
+}
+
+main .content .content-description button:hover {
+    border: 3px solid #5800ff;
+    background-color: transparent;
+
+    color: #5800ff;
+}
+
+main .content .content-image {
+    flex: 1;
+
+    display: flex;
+}
+
+main .content .content-image img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin: auto;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #e8e7e9;
+
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #5800ff;
+}
