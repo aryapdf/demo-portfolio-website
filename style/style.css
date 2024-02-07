@@ -24,7 +24,7 @@ header.navbar-container {
     margin-inline: auto;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     z-index: 9999;
@@ -32,9 +32,12 @@ header.navbar-container {
 }
 
 header.navbar-container .logo p {
-    width: auto;
-    font: 700 1.5rem 'Montserrat', sans-serif;
+    width: 150px;
+    font: 700 2.5rem 'Montserrat', sans-serif;
     color: #e90ff0;
+    margin: 0;
+    text-align: center;
+    
 
     transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out ;
@@ -201,4 +204,40 @@ main aside .social-media li a {
 
 main aside .social-media li a:hover {
     color: #5800ff;
+}
+
+/* medium devices (768px) */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .logo p {
+        font-size: 2.5rem;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description .title {
+        font-size: 2rem;
+    }
+
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
 }
