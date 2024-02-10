@@ -40,7 +40,7 @@ header.navbar-container {
 header.navbar-container .logo p {
     width: 150px;
     font: 700 2.5rem 'Montserrat', sans-serif;
-    color: #e90ff0;
+    color: #5800ff;
     margin: 0;
     text-align: center;
     
@@ -53,16 +53,16 @@ header.navbar-container .logo p {
 }
 @keyframes hoverme { /*make hover animation*/
     25% {
-        color: #5800ff;
-    }
-    50% {
         color: #e8b403;
     }
-    75% {
+    50% {
         color: #e8e7e9;
     }
-    100% {
+    75% {
         color: #e90ff0;
+    }
+    100% {
+        color: #5800ff;
     }
 }
 
@@ -162,7 +162,7 @@ main .content .content-description button:hover {
 
 .card {
     width: 300px;
-    height: 350px;
+    height: 300px;
     border-radius: 30px;
     position: relative;
     transition: 0.5s ease-in-out;
@@ -215,7 +215,7 @@ main .content .content-description button:hover {
     position: absolute;
     z-index: 2;
 
-    inset: 80% 4px 4px 4px;
+    inset: 100% 4px 4px 4px;
     background-color: #5800ff;
     color: #e8e7e9;
     border-radius: 25px;
@@ -260,27 +260,6 @@ main .content .content-description button:hover {
     font-size: 1.2rem;
     margin-top: 20px;
     width: 80%;
-}
-
-.projects {
-    position: absolute;
-    bottom: 12px;
-    width: 100%;
-    padding: 0 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects .link {
-    color: #5800ff;
-    background-color: #e8e7e9;
-
-    padding: 10px 10px 12px 12px;
-    border-radius: 20px;
-    text-align: center;
-    font: 700 1rem 'Quicksand', sans-serif;
 }
 
 
